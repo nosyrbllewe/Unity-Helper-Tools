@@ -1,0 +1,16 @@
+{
+  "name": "com.nosyrbllewe.uht",
+  "version": "0.1.0",
+  "displayName": "Unity Helper Tools",
+  "description": "A collection of primitive scripts to speed up development.",
+  "unity": "2020.2",
+  "unityRelease": "0f1",
+ "keywords": [
+    "tool"
+  ],
+  "author": {
+    "name": "Bryson Ewell",
+    "email": "brysonewell@outlook.com",
+    "url": "https://github.com/nosyrbllewe"
+  }
+}
