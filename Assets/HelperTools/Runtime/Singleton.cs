@@ -12,7 +12,7 @@ public class Singleton<T> : MonoBehaviour where T : Singleton<T>
             {
                 _instance = FindObjectOfType<T>();
                 if (!_instance)
-                    _instance = new GameObject($"{nameof(T)} (Singleton)").AddComponent<T>();
+                    _instance = new GameObject($"{typeof(T).Name} (Singleton)").AddComponent<T>();
             }
 
             return _instance;
@@ -26,7 +26,7 @@ public class Singleton<T> : MonoBehaviour where T : Singleton<T>
         {
             Instance = (T)this;
         }
-        else
+        else if (Instance != (T)this)
         {
             Debug.LogError($"Singleton of type '{nameof(T)}' already exists.");
         }
